@@ -1,0 +1,67 @@
+/** 
+ * contextProperty reference to proprierty: background-color or color
+ * hoverType reference to lighten or darken sass color function
+ * Thix mixing alredy set transtion for both directions **/
+@mixin hover($contextProperty, $color, $hoverType: lighten) {
+    transition: all .2s ease-out;
+    
+    &:hover {
+        cursor: pointer;
+
+        @if $hoverType == lighten {
+            #{$contextProperty}: lighten($color, 10%);
+        } @else if $hoverType == darken {
+            #{$contextProperty}: darken($color, 10%);
+        } @else {
+            @error "Unknown hoverType parameter. Did you mean 'darken'? For lighten (default) don't use the third parameter (optional) in this mixin.";
+        }
+    }
+}
+
+// Base 8 modifiers generator
+@mixin margin($marginDirection, $spaceQuantity) {
+
+    @for $i from 0 through $spaceQuantity {
+        @if $marginDirection == top {
+            .mt--#{$i * 8} {
+                margin: 0;
+                margin-top: em($i * 8);
+            }
+        } @else if $marginDirection == left {
+            .ml--#{$i * 8} {
+                margin: 0;
+                margin-left: em($i * 8);
+            }
+        } @else if $marginDirection == bottom {
+           .mb--#{$i * 8} {
+                margin: 0;
+                margin-bottom: em(i * 8);
+            }
+        } @else if $marginDirection == right {
+           .mr--#{$i * 8} {
+                margin: 0;
+                margin-right: em($i * 8);
+            }
+        } @else if $marginDirection == all {
+           .mt--#{$i * 8} {
+                margin: 0;
+                margin-top: em($i * 8);
+            }
+
+           .ml--#{$i * 8} {
+                margin: 0;
+                margin-left: em($i * 8);
+            }
+
+           .mb--#{$i * 8} {
+                margin: 0;
+                margin-bottom: em($i * 8);
+            }
+
+           .mr--#{$i * 8} {
+                margin: 0;
+                margin-right: em($i * 8);
+            }
+        }
+    }
+}

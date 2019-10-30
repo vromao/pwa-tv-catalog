@@ -1,0 +1,71 @@
+.catalog-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 em(16) 0 em(16);
+    justify-content: center;
+    margin-bottom: em(32);
+
+
+    &__title {
+        width: 100%;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .card {
+        position: relative;
+        height: rem(294);
+        max-width: rem(200);
+        margin: em(10);
+        overflow: hidden;  
+        cursor: pointer;
+    
+        &-link {
+            color: #fff;
+        }
+    
+        img {
+            height: 100%;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+    
+        &__overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .7);
+            opacity: 0;
+            padding: em(16);
+            transition: all .2s ease-out;
+            
+            &:hover {
+                opacity: 1;
+            }
+        }
+    
+        &__overview {
+            display: block;
+            overflow: hidden;
+            height: rem(80);
+            font-size: 14px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    
+        &__details {
+            position: absolute;
+            bottom: rem(16);
+            right: rem(16);
+            text-decoration: underline;
+            font-weight: bold;
+    
+            @include hover(color, $default-blue);
+        }
+    
+    }
+}

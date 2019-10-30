@@ -1,0 +1,19 @@
+// utils
+@import "utils/functions";
+@import "utils/mixins";
+
+
+// variables
+@import "utils/variables";
+
+
+// BASE
+@import "base/normalize";
+@import "base/base";
+@import "base/nav";
+@import "base/page";
+
+
+// pages components
+@import "components/detailsPage";
+@import "components/catalog";

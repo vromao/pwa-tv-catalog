@@ -1,0 +1,9 @@
+$browser-font-size-base: 16;
+
+@function em($pixels, $context: $browser-font-size-base) {
+  @return #{$pixels / $context}em;
+}
+
+@function rem($pixels, $context: $browser-font-size-base) {
+  @return #{$pixels / $context}rem;
+}

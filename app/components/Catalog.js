@@ -63,7 +63,7 @@ export class Catalog {
                         <div class="card">
                             <img src="https://image.tmdb.org/t/p/w${this.posterSize}${item.poster_path}" alt="PWA TV Catalog - ${item.original_title || item.name}" class="card-img">
                             <div class="card__overlay">
-                                <h2 class="card__title">${item.title || item.name}</h2>
+                                <h2 class="card__title mt--0">${item.title || item.name}</h2>
                                 <p class="card__overview">${item.overview}</p>
                                 <span class="card__details">See more</span>
                             </div>

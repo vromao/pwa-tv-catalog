@@ -9,6 +9,7 @@ Acesse o PWA (build dist): [clique aqui](https://vromao.github.io/pwa-tv-catalog
   - npm install gulp-cli -g
   - npm install gulp -D
 - **NodeJS**: v12.13.0
+- Para instalar as outras dependencias do projeto: **npm install** com o terminal na pasta raiz (onde esta o index.html e o package.json)
 
 ## Rodando ambiente de desenvolvimento e produção
 - Desenvolvimento: **gulp** ou **gulp watch** no terminal

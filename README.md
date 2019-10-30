@@ -2,7 +2,7 @@
 
 O projeto consiste em um exemplo de aplicação PWA para catalogo de séries e filmes com informações e images.
 
-Acesse o PWA (build dist): [clique aqui](https://vromao.github.io/pwa-tv-catalog/dist/index.html)
+Acesse o PWA (build dist): [clique aqui](https://vromao.github.io/pwa-tv-catalog/dist/)
 
 ## Instalação e dependencias do projeto
 - **GulpJS** [Mais informações sobre como instalar](https://gulpjs.com/docs/en/getting-started/quick-start)
